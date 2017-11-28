@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Broker Updated</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Broker updated:</h1>
+    <p th:text="'Broker URL: ' + ${broker.url}" />
+    <p th:text="'username: ' + ${broker.username}" />
+    <p th:text="'password: ' + ${broker.password}" />
+    <p th:text="'Destination name: ' + ${broker.destinationName}" />
+    <p th:text="'Queue: ' + ${broker.useQueue}" />
+    <a href="/broker">Update broker info</a>
+</body>
+</html>
